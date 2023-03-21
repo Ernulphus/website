@@ -3,6 +3,8 @@
   background-color: #282c34;
   min-height: 100vh;
   color: white;
+  display: flex;
+  justify-content: space-between;
 }
 
 .App-logo {
@@ -31,11 +33,17 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: dimgray;
 }
+
+.sidebarButton {
+  position: absolute;
+}
+
+/* 
+div {
+  border: 1px solid green;
+} */

@@ -1,19 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
-import {links} from './constants.js';
+import {links} from './constants';
+import './components/Sidebar';
+import Sidebar from './components/Sidebar';
 
 function App() {
-  const personalLinks = links.map((link) => (
-    <div><a
-        className="App-link"
-        href={link.href}
-        target="_blank"
-        rel="noopener noreferrer"
-      >{link.text}</a>
-      <br/></div>
-  ));
+
   return (
     <div className="App">
+      <Sidebar />
+      <div style={{display:"flex", justifyContent:"center", width:"100%"}}>
       <header className="App-header">
         <p>
           Boaz Kaufman's Personal Website
@@ -22,11 +18,8 @@ function App() {
         <i>Under Construction</i>
         </p>
       </header>
+      </div>
       
-      <h2>Quick Links</h2>
-      
-      <br/>
-      {personalLinks}
     </div>
   );
 }
