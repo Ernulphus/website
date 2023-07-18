@@ -37,10 +37,18 @@
   display: flex;
   flex-direction: column;
   background-color: dimgray;
+  text-align: left;
 }
 
 .sidebarButton {
   position: absolute;
+}
+
+.bio {
+  text-align: justify;
+  font-size: larger;
+  margin-left: 1vw;
+  margin-right: 2vw;
 }
 
 /* 

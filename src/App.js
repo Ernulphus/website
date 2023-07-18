@@ -1,24 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
-import {links} from './constants';
 import './components/Sidebar';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Sidebar from './components/Sidebar';
+import Home from './components/Home';
 
 function App() {
-
   return (
     <div className="App">
       <Sidebar />
-      <div style={{display:"flex", justifyContent:"center", width:"100%"}}>
-      <header className="App-header">
-        <p>
-          Boaz Kaufman's Personal Website
-        </p>
-        <p>
-        <i>Under Construction</i>
-        </p>
-      </header>
-      </div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </BrowserRouter>
+
       
     </div>
   );
