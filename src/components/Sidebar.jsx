@@ -1,6 +1,6 @@
 // Component for webpage sidebar with internal and external links
 import {useState} from 'react';
-import {links, projects} from "../constants";
+import {links, projects, contacts} from "../constants";
 
 function Sidebar() {
     const [open, setOpen] = useState(true);
@@ -22,6 +22,11 @@ function Sidebar() {
           >{project.text}</a>
           <br/></div>
       ));
+    const personalContacts = contacts.map((contact) => (
+        <div>
+            {contact.text} : {contact.value}      
+        </div>
+      ));
 
     if (!open) {
         return (<button className="sidebarButton" 
@@ -36,10 +41,18 @@ function Sidebar() {
                 onClick={()=>setOpen(false)}>
                     Hide Sidebar
             </button>
-            <b>Links</b>
-            {personalLinks}
-            <b>Project Repos</b>
-            {personalProjects}
+            <p>
+                <b>Links</b>
+                {personalLinks}
+            </p>
+            <p>
+                <b>Project Repos</b>
+                {personalProjects}
+            </p>
+            <p>
+                <b>Contact</b>
+                {personalContacts}
+            </p>
         </div>
     );
 }
