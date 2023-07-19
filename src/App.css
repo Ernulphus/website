@@ -44,9 +44,15 @@
   position: absolute;
 }
 
+.sidebarSection {
+  margin-top: 3vh;
+}
+
 .bio {
+  font-size: 40px;
   text-align: justify;
   font-size: larger;
+  margin-top: 30vh;
   margin-left: 1vw;
   margin-right: 2vw;
 }

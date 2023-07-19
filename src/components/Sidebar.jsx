@@ -41,18 +41,18 @@ function Sidebar() {
                 onClick={()=>setOpen(false)}>
                     Hide Sidebar
             </button>
-            <p>
+            <div className="sidebarSection">
                 <b>Links</b>
                 {personalLinks}
-            </p>
-            <p>
+            </div>
+            <div className="sidebarSection">
                 <b>Project Repos</b>
                 {personalProjects}
-            </p>
-            <p>
+            </div>
+            <div className="sidebarSection">
                 <b>Contact</b>
                 {personalContacts}
-            </p>
+            </div>
         </div>
     );
 }
