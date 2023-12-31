@@ -2,6 +2,8 @@
 import {useState} from 'react';
 import {links, projects, contacts} from "../constants";
 
+import './Sidebar.css';
+
 function Sidebar() {
     const [open, setOpen] = useState(true);
     const personalLinks = links.map((link) => (

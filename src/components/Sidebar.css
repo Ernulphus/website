@@ -1,0 +1,26 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: dimgray;
+  text-align: left;
+  padding: 0.5rem;
+}
+
+@media (min-width: 1075px) {
+
+}
+
+@media (max-width: 1074px) {
+  .sidebar {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.sidebarButton {
+  position: fixed;
+}
+
+.sidebarSection {
+  margin-top: 3vh;
+}
