@@ -2,12 +2,12 @@
 const links = [
         {text:'GitHub', href:"https://github.com/Ernulphus"},
         {text:'LinkedIn', href:"https://www.linkedin.com/in/boaz-kaufman-4281b0174/"},
+        {text:'DataMixMaster', href:"https://www.datamixmaster.com/"},
         {text:'Undergraduate Thesis', href:"https://eportfolios.macaulay.cuny.edu/kaufmanspringboard/"},
         
 ]
 
 const projects = [
-  {text:'DataMixMaster', href:"https://www.datamixmaster.com/"},
   {text:'CS Capstone', href:"https://github.com/Ernulphus/capstone-Bsharp-AI"},
   {text:'C++ Knight\'s Tour', href:"https://github.com/Ernulphus/Knights-Tour-Cpp"},
   {text:'C++ Turing Machine Simulator', href:"https://github.com/Ernulphus/TuringMachineSim"},
