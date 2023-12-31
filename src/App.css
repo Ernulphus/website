@@ -1,10 +1,13 @@
 .App {
-  text-align: center;
   background-color: #eae0d5;
   min-height: 100vh;
   color: #5e503f;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+}
+
+.App * {
+  box-sizing: border-box;
 }
 
 .App-header {
@@ -26,7 +29,7 @@
 
 @media (max-width: 1074px) {
   .App {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 }
 

@@ -1,24 +1,64 @@
-.sidebar-open {
+.sidebar {
   display: flex;
   flex-direction: column;
-  background-color: eae0d5;
-  text-align: left;
+  background-color: #eae0d5;
   padding: 0.5rem;
+  overflow: hidden;
+}
+
+@keyframes openSidebar {
+  0% { 
+    width: 0; 
+    height: 0;
+  }
+  100% { 
+    width: 80%; 
+    height: 100%;
+  }
+}
+
+@keyframes closeSidebar {
+  0% { 
+    width: 80%;
+    height: 100%;
+   }
+  100% { 
+    width: 0;
+    height: 0;
+   }
 }
 
 @media (min-width: 1075px) {
+  .sidebar {
+    align-items: left;
+    text-align: left;
+  }
 
+  .sidebar-open {
+    animation: openSidebar 0.5s ease-out forwards;
+  }
+  
+  .sidebar-closed {
+    animation: closeSidebar 0.5s ease-out forwards;
+    padding: 0;
+  }
 }
 
 @media (max-width: 1074px) {
-  .sidebar-open {
+  .sidebar {
     align-items: center;
     text-align: center;
+  }
+
+  .sidebar-closed {
+    
   }
 }
 
 .sidebarButton {
   position: fixed;
+  left: 0;
+  top: 0;
   background-color: #c6ac8f;
 }
 
@@ -28,4 +68,15 @@
 
 .sidebarSection {
   margin-top: 3vh;
+}
+
+.sidebarSection div {
+  transition: color 0.2s;
+  transition: outline-color 0.2s;
+  outline: #eae0d5 solid 0px;
+}
+
+.sidebarSection div:hover {
+  color: #0a0908;
+  outline: #0a0908 solid 1px;
 }

@@ -30,20 +30,29 @@ function Sidebar() {
         </div>
       ));
 
-    if (!open) {
-        return (<button className="sidebarButton" 
-            type="button" 
-            onClick={()=>setOpen(true)}>
-                Show Sidebar
-            </button>);}
+    const openSidebar = () => {
+      setOpen(true);
+    }
+    const closeSidebar = () => {
+      setOpen(false);
+    }
+
     return (
-        <div className="sidebar-open">
-            <button
-                className='sidebarButton'
+        <div className={`sidebar ${open ? "sidebar-open" : "sidebar-closed"}`} >
+            {(
+              open
+              ? <button
+                  className='sidebarButton'
+                  type="button" 
+                  onClick={closeSidebar}>
+                    Hide Links
+                </button>
+              : <button className="sidebarButton" 
                 type="button" 
-                onClick={()=>setOpen(false)}>
-                    Hide Sidebar
-            </button>
+                onClick={openSidebar}>
+                  Show Links
+              </button>
+            )}
             <div className="sidebarSection">
                 <b>Links</b>
                 {personalLinks}

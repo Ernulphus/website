@@ -7,6 +7,10 @@
   .home { 
     flex-direction: row;
   }
+
+  .home-selfie {
+    width: 33vw;
+  }
 }
 
 @media (max-width: 1074px) {
@@ -15,6 +19,7 @@
   }
 }
 
-.home-selfie img {
+.home-selfie {
   aspect-ratio: 0.75;
+  object-fit: cover;
 }
