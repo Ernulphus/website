@@ -1,0 +1,20 @@
+.home {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 1075px) {
+  .home { 
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 1074px) {
+  .home {
+    flex-direction: column-reverse;
+  }
+}
+
+.home-selfie img {
+  aspect-ratio: 0.75;
+}
