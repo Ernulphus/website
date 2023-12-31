@@ -50,8 +50,8 @@
     text-align: center;
   }
 
-  .sidebar-closed {
-    
+  .sidebarButton {
+    display: none;
   }
 }
 
@@ -70,13 +70,13 @@
   margin-top: 3vh;
 }
 
-.sidebarSection div {
+.sidebarSection .sidebar-link-div {
   transition: color 0.2s;
   transition: outline-color 0.2s;
   outline: #eae0d5 solid 0px;
 }
 
-.sidebarSection div:hover {
+.sidebarSection .sidebar-link-div:hover {
   color: #0a0908;
   outline: #0a0908 solid 1px;
 }

@@ -7,7 +7,7 @@ import './Sidebar.css';
 function Sidebar() {
     const [open, setOpen] = useState(false);
     const personalLinks = links.map((link) => (
-        <div><a
+        <div className='sidebar-link-div'><a
             className="App-link"
             href={link.href}
             target="_blank"
@@ -16,7 +16,7 @@ function Sidebar() {
           <br/></div>
       ));
     const personalProjects = projects.map((project) => (
-        <div><a
+        <div className='sidebar-link-div'><a
             className="App-link"
             href={project.href}
             target="_blank"
