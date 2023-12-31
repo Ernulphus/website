@@ -25,7 +25,7 @@ const contacts = [
 
 const bioText = (
   <>
-    <b>Boaz Kaufman</b> is a Python, C++, and JavaScript programmer based in New York City. They graduated magna cum laude from CUNY Macaulay Honors College in 2022 majoring in Computer Science and Classical Studies and minoring in Music and Mathematics. After college, they interned at the Department of Education's Security Incident Response Team, where they investigated and remediated compromised user accounts on a network of several million hosts. They taught computer science at East Harlem Scholars Academy High School for the 2022-2023 school year and currently work as a front-end engineer for DataMixMaster. When they aren't programming, they read science fiction and write poetry. 
+    <h2>Boaz Kaufman</h2> is a Python, C++, and JavaScript programmer based in New York City. They graduated magna cum laude from CUNY Macaulay Honors College at Hunter College in 2022 majoring in Computer Science and Classical Studies and minoring in Music and Mathematics. After college, they interned at the Department of Education's Security Incident Response Team, where they investigated and remediated compromised user accounts on a network of several million hosts. They taught computer science at East Harlem Scholars Academy High School for the 2022-2023 school year and currently work as a front-end engineer for DataMixMaster. When they aren't programming, they read science fiction and write poetry. 
   </>
 )
 
