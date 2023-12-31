@@ -1,8 +1,8 @@
 .App {
   text-align: center;
-  background-color: #282c34;
+  background-color: #eae0d5;
   min-height: 100vh;
-  color: white;
+  color: #5e503f;
   display: flex;
   justify-content: space-between;
 }
@@ -31,7 +31,7 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: #22333b;
 }
 
 .bio {

@@ -1,7 +1,7 @@
-.sidebar {
+.sidebar-open {
   display: flex;
   flex-direction: column;
-  background-color: dimgray;
+  background-color: eae0d5;
   text-align: left;
   padding: 0.5rem;
 }
@@ -11,7 +11,7 @@
 }
 
 @media (max-width: 1074px) {
-  .sidebar {
+  .sidebar-open {
     align-items: center;
     text-align: center;
   }
@@ -19,6 +19,11 @@
 
 .sidebarButton {
   position: fixed;
+  background-color: #c6ac8f;
+}
+
+.sidebarButton:hover {
+
 }
 
 .sidebarSection {

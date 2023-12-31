@@ -5,7 +5,7 @@ import {links, projects, contacts} from "../constants";
 import './Sidebar.css';
 
 function Sidebar() {
-    const [open, setOpen] = useState(true);
+    const [open, setOpen] = useState(false);
     const personalLinks = links.map((link) => (
         <div><a
             className="App-link"
@@ -37,8 +37,9 @@ function Sidebar() {
                 Show Sidebar
             </button>);}
     return (
-        <div className="sidebar">
-            <button 
+        <div className="sidebar-open">
+            <button
+                className='sidebarButton'
                 type="button" 
                 onClick={()=>setOpen(false)}>
                     Hide Sidebar
