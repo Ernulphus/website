@@ -5,7 +5,7 @@ import {links, projects, contacts} from "../constants";
 import './Sidebar.css';
 
 function Sidebar() {
-    const [open, setOpen] = useState(false);
+    const [open, setOpen] = useState(true);
     const personalLinks = links.map((link) => (
         <div className='sidebar-link-div'><a
             className="App-link"
@@ -38,34 +38,38 @@ function Sidebar() {
     }
 
     return (
-        <div className={`sidebar ${open ? "sidebar-open" : "sidebar-closed"}`} >
-            {(
-              open
-              ? <button
-                  className='sidebarButton'
+      <div className={`sidebar-wrapper ${open ? "is-open" : ""}`} >
+        <div className="sidebar-inner">
+          <div className="sidebar">
+              {(
+                open
+                ? <button
+                    className='sidebarButton'
+                    type="button" 
+                    onClick={closeSidebar}>
+                      Hide Links
+                  </button>
+                : <button className="sidebarButton" 
                   type="button" 
-                  onClick={closeSidebar}>
-                    Hide Links
+                  onClick={openSidebar}>
+                    Show Links
                 </button>
-              : <button className="sidebarButton" 
-                type="button" 
-                onClick={openSidebar}>
-                  Show Links
-              </button>
-            )}
-            <div className="sidebarSection">
-                <b>Links</b>
-                {personalLinks}
-            </div>
-            <div className="sidebarSection">
-                <b>Project Repos</b>
-                {personalProjects}
-            </div>
-            <div className="sidebarSection">
-                <b>Contact</b>
-                {personalContacts}
-            </div>
-        </div>
+              )}
+              <div className="sidebarSection">
+                  <b>Links</b>
+                  {personalLinks}
+              </div>
+              <div className="sidebarSection">
+                  <b>Project Repos</b>
+                  {personalProjects}
+              </div>
+              <div className="sidebarSection">
+                  <b>Contact</b>
+                  {personalContacts}
+              </div>
+          </div>
+          </div>
+      </div>
     );
 }
 
