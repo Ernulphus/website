@@ -50,6 +50,7 @@
   
   .sidebar-inner {
     overflow: clip;
+    white-space: nowrap;
   }
   
   .sidebar-wrapper.is-open {
