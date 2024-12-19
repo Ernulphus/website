@@ -90,6 +90,7 @@
   transition: outline-color 0.2s;
   outline: #eae0d5 solid 0px;
   transition: transform 0.2s;
+  padding: 0.25rem 0;
 }
 
 .sidebarSection .sidebar-link-div:hover {
