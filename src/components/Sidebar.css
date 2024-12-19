@@ -3,7 +3,6 @@
   flex-direction: column;
   background-color: #eae0d5;
   padding: 0.5rem;
-  overflow: hidden;
 }
 
 @keyframes openSidebar {
@@ -30,8 +29,8 @@
 
 @media (min-width: 1075px) {
   .sidebar {
-    align-items: left;
     text-align: left;
+    overflow: clip;
   }
 
   .sidebar-open {
@@ -50,7 +49,7 @@
   }
   
   .sidebar-inner {
-    overflow: hidden;
+    overflow: clip;
   }
   
   .sidebar-wrapper.is-open {
@@ -74,10 +73,11 @@
   left: 0;
   top: 0;
   background-color: #c6ac8f;
+  transition: transform 0.2s;
 }
 
 .sidebarButton:hover {
-
+  transform: translate(1px, 1px);
 }
 
 .sidebarSection {
@@ -88,9 +88,11 @@
   transition: color 0.2s;
   transition: outline-color 0.2s;
   outline: #eae0d5 solid 0px;
+  transition: transform 0.2s;
 }
 
 .sidebarSection .sidebar-link-div:hover {
   color: #0a0908;
   outline: #0a0908 solid 1px;
+  transform: translate(2px);
 }
