@@ -9,7 +9,7 @@ const links = [
 ]
 
 const projects = [
-  {text:'CS Capstone', href:"https://github.com/Ernulphus/capstone-Bsharp-AI"},
+  {text:'Undergraduate CS Capstone', href:"https://github.com/Ernulphus/capstone-Bsharp-AI"},
   {text:'C++ Knight\'s Tour', href:"https://github.com/Ernulphus/Knights-Tour-Cpp"},
   {text:'C++ Turing Machine Simulator', href:"https://github.com/Ernulphus/TuringMachineSim"},
   {text:'Python Web Browser', href:"https://github.com/Ernulphus/whimsical-browser"},
