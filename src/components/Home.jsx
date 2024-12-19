@@ -1,10 +1,10 @@
-import selfie from './../eclipseglasses.jpg';
+import selfie from './../Goggles.jpg';
 import './Home.css';
 import { bioText } from './../constants';
 
 function Home () {
 
-  const selfieAlt = "Boaz wearing eclipse glasses."
+  const selfieAlt = "Boaz wearing cool goggles."
 
   return (    
     <div className='home'>

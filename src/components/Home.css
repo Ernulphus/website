@@ -11,6 +11,10 @@
   .home-selfie {
     width: 33vw;
   }
+
+  .bio {
+    align-content: center;
+  }
 }
 
 @media (max-width: 1074px) {
