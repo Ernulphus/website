@@ -21,9 +21,17 @@
   .home {
     flex-direction: column-reverse;
   }
+
+  #peach {
+    display: none;
+  }
 }
 
 .home-selfie {
   aspect-ratio: 0.75;
   object-fit: cover;
+}
+
+#peach {
+  background-image: url('/public/blue-transparent.png') !important;
 }
