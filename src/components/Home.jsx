@@ -14,6 +14,7 @@ function Home () {
       nekoImageUrl: "/peach.png",
       initialPosX: 1000,
       initialPosY: 50,
+      startFollowing: true,
      });
     neko.init();
 
