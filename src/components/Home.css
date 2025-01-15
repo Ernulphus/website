@@ -1,0 +1,37 @@
+.home {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 1075px) {
+  .home { 
+    flex-direction: row;
+  }
+
+  .home-selfie {
+    width: 33vw;
+  }
+
+  .bio {
+    align-content: center;
+  }
+}
+
+@media (max-width: 1074px) {
+  .home {
+    flex-direction: column-reverse;
+  }
+
+  #peach {
+    display: none;
+  }
+}
+
+.home-selfie {
+  aspect-ratio: 0.75;
+  object-fit: cover;
+}
+
+#peach {
+  background-image: url('/public/marmalade.png') !important;
+}
