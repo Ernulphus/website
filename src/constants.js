@@ -9,14 +9,53 @@ const links = [
 ]
 
 const projects = [
-  {text:'Undergraduate CS Capstone', href:"https://github.com/Ernulphus/capstone-Bsharp-AI"},
-  {text:'C++ Knight\'s Tour', href:"https://github.com/Ernulphus/Knights-Tour-Cpp"},
-  {text:'C++ Turing Machine Simulator', href:"https://github.com/Ernulphus/TuringMachineSim"},
-  {text:'Python Web Browser', href:"https://github.com/Ernulphus/whimsical-browser"},
-  {text:'PySpeed', href:"https://github.com/Ernulphus/speed"},
-  {text:'Campus Management', href:"https://github.com/Ernulphus/final-client"},
-  {text:'Mock Bank Account', href:"https://ernulphus.github.io/bor/"},
-  {text:'Laser Chess', href:"https://github.com/Ernulphus/winter-2020-codefest-submissions-team-cool"},
+  {
+    text:'Undergraduate CS Capstone',
+    href:"https://github.com/Ernulphus/capstone-Bsharp-AI",
+  },
+  {
+    text:'C++ Knight\'s Tour',
+    href:"https://github.com/Ernulphus/Knights-Tour-Cpp",
+  },
+  {
+    text:'C++ Turing Machine Simulator',
+    href:"https://github.com/Ernulphus/TuringMachineSim",
+  },
+  {
+    text:'Python Web Browser',
+    href:"https://github.com/Ernulphus/whimsical-browser",
+  },
+  {
+    text:'PySpeed',
+    href:"https://github.com/Ernulphus/speed",
+  },
+  {
+    text:'Campus Management',
+    href:"https://github.com/Ernulphus/final-client",
+  },
+  {
+    text:'Mock Bank Account',
+    href:"https://ernulphus.github.io/bor/"
+  },
+  {
+    text:'Laser Chess',
+    href:"https://github.com/Ernulphus/winter-2020-codefest-submissions-team-cool",
+  },
+]
+
+const education = [
+  {
+    name:'Macaulay Honors College at Hunter College',
+  },
+  {
+    name:'UC Berkeley School of Information',
+  },
+]
+
+const employment = [
+  {
+    name: 'DataMixMaster, LLC',
+  }
 ]
 
 const contacts = [
