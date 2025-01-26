@@ -1,0 +1,10 @@
+.cards-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.cards h2{
+  text-align: center;
+}

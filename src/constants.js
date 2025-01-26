@@ -2,43 +2,50 @@
 const links = [
         {text:'GitHub', href:"https://github.com/Ernulphus"},
         {text:'LinkedIn', href:"https://www.linkedin.com/in/boaz-kaufman-4281b0174/"},
-        {text:'DataMixMaster', href:"https://www.datamixmaster.com/"},
-        {text:'SFA KnowledgeHub', href:"https://sfa-frontend.herokuapp.com/"},
+        {text:'Substack', href:"https://boazkaufman.substack.com/?utm_source=substack&utm_medium=web&utm_campaign=substack_profile"},
         {text:'Undergraduate Thesis', href:"https://eportfolios.macaulay.cuny.edu/kaufmanspringboard/"},
         
 ]
 
 const projects = [
   {
-    text:'Undergraduate CS Capstone',
+    name: 'DataMixMaster',
+    href: "https://www.datamixmaster.com/",
+  },
+  {
+    name: 'SFA Knowledge Hub',
+    href: "https://sfa-frontend.herokuapp.com/"
+  },
+  {
+    name:'Undergraduate CS Capstone',
     href:"https://github.com/Ernulphus/capstone-Bsharp-AI",
   },
   {
-    text:'C++ Knight\'s Tour',
+    name:'C++ Knight\'s Tour',
     href:"https://github.com/Ernulphus/Knights-Tour-Cpp",
   },
   {
-    text:'C++ Turing Machine Simulator',
+    name:'C++ Turing Machine Simulator',
     href:"https://github.com/Ernulphus/TuringMachineSim",
   },
   {
-    text:'Python Web Browser',
+    name:'Python Web Browser',
     href:"https://github.com/Ernulphus/whimsical-browser",
   },
   {
-    text:'PySpeed',
+    name:'PySpeed',
     href:"https://github.com/Ernulphus/speed",
   },
   {
-    text:'Campus Management',
+    name:'Campus Management',
     href:"https://github.com/Ernulphus/final-client",
   },
   {
-    text:'Mock Bank Account',
+    name:'Mock Bank Account',
     href:"https://ernulphus.github.io/bor/"
   },
   {
-    text:'Laser Chess',
+    name:'Laser Chess',
     href:"https://github.com/Ernulphus/winter-2020-codefest-submissions-team-cool",
   },
 ]
@@ -46,9 +53,20 @@ const projects = [
 const education = [
   {
     name:'Macaulay Honors College at Hunter College',
+    location: 'New York, NY',
+    dates: 'Aug. 2018 - June 2022',
+    degree: 'Bachelor of Arts',
+    majors: 'Computer Science and Classical Studies',
+    minors: 'Music and Mathematics',
+    honors: ['ΦBK', 'EΣΦ'],
+    gpa: '3.885'
   },
   {
     name:'UC Berkeley School of Information',
+    location: 'Remote',
+    dates: 'May 2024 - April 2026 (expected)',
+    degree: 'Masters of Information and Cyber Security (MICS)',
+    gpa: '4.0',
   },
 ]
 
@@ -100,6 +118,8 @@ const bioText = (
 export {
   links,
   projects,
+  education,
+  employment,
   contacts,
   bioText,
 }

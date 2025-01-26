@@ -1,12 +1,20 @@
-import WhimsicalBrowser from './WhimsicalBrowser';
 import {projects} from '../../constants';
+import { Link } from 'react-router-dom';
 
-function ProjectRoutes () {
+import './Projects.css';
+
+function Projects () {
     
-    routes = projects.map(() => (
-         // Map list of projects from constants.js to a route for each page
+    const routes = projects.map((project) => (
+        <h2><Link to={project.href}>{project.name}</Link></h2>
     ))
-    return {routes}
+    return (
+        <div className='cards-wrapper'>
+            <div className='cards'>
+                {routes}
+            </div>
+        </div>
+    );
 }
 
-export default ProjectRoutes;
+export default Projects;

@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useEffect } from 'react';
 import Sidebar from './components/Sidebar';
 import Home from './components/Home';
+import Projects from './components/Projects/ProjectRoutes';
 
 function App() {
   useEffect(() => {
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/website" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
         </Routes>
       </BrowserRouter>
 

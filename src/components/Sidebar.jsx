@@ -21,7 +21,7 @@ function Sidebar() {
             href={project.href}
             target="_blank"
             rel="noopener noreferrer"
-          >{project.text}</a>
+          >{project.name}</a>
           <br/></div>
       ));
     const personalContacts = contacts.map((contact) => (
