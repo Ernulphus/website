@@ -55,6 +55,31 @@ const education = [
 const employment = [
   {
     name: 'DataMixMaster, LLC',
+    location: 'Remote',
+    dates: 'Aug. 2023 - Present',
+    title: 'Full stack web developer',
+    skills: ['React.js', 'Flask', 'git', 'bash', 'Javascript'],
+  },
+  {
+    name: 'East Harlem Scholars High School',
+    location: 'New York, NY',
+    dates: 'Aug. 2022 - Oct. 2023',
+    title: 'Computer Science Teacher',
+    skills: ['Python']
+  },
+  {
+    name: 'NYCDOE Security Incident Response Team',
+    location: 'New York, NY',
+    dates: 'June - Aug. 2022',
+    title: 'Incident Response Intern',
+    skills: ['Incident response', 'Devo SIEM', 'XSOAR', 'MS Cloud App Security'],
+  },
+  {
+    name: 'CUNY Hunter College',
+    location: 'New York, NY',
+    dates: 'Sept. 2021 - Dec. 2021',
+    title: 'Computer Theory TA/Tutor',
+    skills: ['Automata theory', 'Turing machines', 'Regular expressions']
   }
 ]
 
