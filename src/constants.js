@@ -5,15 +5,15 @@ const pages = [
   },
   {
     name: 'Projects',
-    href: '/Projects',
+    href: '/projects',
   },
   // {
   //   name: 'Education',
-  //   href: 'website/Education',
+  //   href: '/Education',
   // },
   // {
   //   name: 'Work Experience',
-  //   href: 'website/Experience',
+  //   href: '/Experience',
   // },
 ];
 

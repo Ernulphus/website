@@ -1,18 +1,20 @@
 // Component for webpage sidebar with internal and external links
 import {useState} from 'react';
 import {pages, links, contacts} from "../constants";
+import { Link } from 'react-router-dom';
 
 import './Sidebar.css';
 
 function Sidebar() {
     const [open, setOpen] = useState(true);
     const navPages = pages.map((page) => (
+      <Link
+          to={page.href}
+        >
       <div className='sidebar-link-div' key={page.name}>
-        <a
-          className="App-link"
-          href={page.href}
-        >{page.name}</a>
+        {page.name}
       <br/></div>
+      </Link>
     ));
     const personalLinks = links.map((link) => (
         <div className='sidebar-link-div' key={link.text}><a
