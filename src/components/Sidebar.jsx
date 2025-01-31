@@ -71,10 +71,10 @@ function Sidebar() {
                   <b>Links</b>
                   {personalLinks}
               </div>
-              <div className="sidebarSection">
+              {/* <div className="sidebarSection">
                   <b>Project Repos</b>
                   {personalProjects}
-              </div>
+              </div> */}
               <div className="sidebarSection">
                   <b>Contact</b>
                   {personalContacts}
