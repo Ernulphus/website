@@ -1,11 +1,19 @@
 // Component for webpage sidebar with internal and external links
 import {useState} from 'react';
-import {links, projects, contacts} from "../constants";
+import {pages, links, projects, contacts} from "../constants";
 
 import './Sidebar.css';
 
 function Sidebar() {
     const [open, setOpen] = useState(true);
+    const navPages = pages.map((page) => (
+      <div className='sidebar-link-div' key={page.name}>
+        <a
+          className="App-link"
+          href={page.href}
+        >{page.name}</a>
+      <br/></div>
+    ));
     const personalLinks = links.map((link) => (
         <div className='sidebar-link-div' key={link.text}><a
             className="App-link"
@@ -47,14 +55,18 @@ function Sidebar() {
                     className='sidebarButton'
                     type="button" 
                     onClick={closeSidebar}>
-                      Hide Links
+                      Hide NavBar
                   </button>
                 : <button className="sidebarButton" 
                   type="button" 
                   onClick={openSidebar}>
-                    Show Links
+                    Show NavBar
                 </button>
               )}
+              <div className='sidebarSection'>
+                  <b>Navigation</b>
+                  {navPages}
+              </div>
               <div className="sidebarSection">
                   <b>Links</b>
                   {personalLinks}

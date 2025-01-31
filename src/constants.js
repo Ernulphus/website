@@ -1,52 +1,110 @@
-// Make array with links
+const pages = [
+  {
+    name: 'Home',
+    href: '/',
+  },
+  {
+    name: 'Projects',
+    href: '/Projects',
+  },
+  // {
+  //   name: 'Education',
+  //   href: '/Education',
+  // },
+  // {
+  //   name: 'Work Experience',
+  //   href: '/Experience',
+  // },
+];
+
 const links = [
         {text:'GitHub', href:"https://github.com/Ernulphus"},
         {text:'LinkedIn', href:"https://www.linkedin.com/in/boaz-kaufman-4281b0174/"},
         {text:'Substack', href:"https://boazkaufman.substack.com/?utm_source=substack&utm_medium=web&utm_campaign=substack_profile"},
-        {text:'Undergraduate Thesis', href:"https://eportfolios.macaulay.cuny.edu/kaufmanspringboard/"},
-        
-]
+        {text:'Undergraduate Thesis', href:"https://eportfolios.macaulay.cuny.edu/kaufmanspringboard/"},      
+];
+      
+const sk = {
+  JS: 'JavaScript',
+  REACT: 'React',
+  PYTHON: 'Python',
+  FLASK: 'Flask',
+  GIT: 'Git',
+  BASH: 'Bash',
+  TF: 'TensorFlow',
+  CPP: 'C++',
+  AT: 'Automata Theory',
+  GODOT: 'Godot',
+  SQL: 'SQL',
+  MONGO: 'MongoDB',
+};
 
 const projects = [
   {
     name: 'DataMixMaster',
     href: "https://www.datamixmaster.com/",
+    skills: [sk.JS, sk.REACT, sk.PYTHON, sk.FLASK, sk.GIT, sk.BASH, sk.SQL, sk.MONGO],
+    desc: 'Data congregation and analysis tool. Full stack work.'
   },
   {
     name: 'SFA Knowledge Hub',
-    href: "https://sfa-frontend.herokuapp.com/"
+    href: "https://sfa-frontend.herokuapp.com/",
+    skills: [sk.JS, sk.REACT],
+    desc: 'Custom frontend for the Structured Finance Association, via DataMixMaster.'
   },
   {
     name:'Undergraduate CS Capstone',
     href:"https://github.com/Ernulphus/capstone-Bsharp-AI",
+    skills: [sk.REACT, sk.GIT, sk.BASH, sk.PYTHON, sk.JS, sk.TF],
+    desc: 'Trained a tree ensemble of convolutional neural networks using TensorFlow.py to classify images of musical instruments. A root model classifies images first by orchestra section, then the appropriate specialized model classifies it as a specific instrument. Scraped training images from the web using BeautifulSoup and Selenium; manipulated images using Pillow. Wrote additional shell scripts in bash to track statistics and clean data. Collaborative project with Mashroor Ali, Jona Chen, and Sam Gustafsson'
+  },
+  {
+    name: 'Chomsky Abnormal Form',
+    href: "https://github.com/Ernulphus/Chomsky-Abnormal-Form",
+    skills: [sk.REACT, sk.JS, sk.AT],
+    desc: 'Website that mimics Evan Wallace\'s Finite State Machine designer but you can actually run the resulting machine on a string. RegEx section by Sasha Ebersole.'
   },
   {
     name:'C++ Knight\'s Tour',
     href:"https://github.com/Ernulphus/Knights-Tour-Cpp",
+    skills: [sk.CPP],
+    desc: 'Interactive solution to the Knight\'s Tour problem in C++. Works for different sized chessboards.'
   },
   {
     name:'C++ Turing Machine Simulator',
     href:"https://github.com/Ernulphus/TuringMachineSim",
+    skills: [sk.AT, sk.CPP],
+    desc: 'Interactive simulator of a Turing machine. See documentation for writing your own programs!'
   },
   {
     name:'Python Web Browser',
     href:"https://github.com/Ernulphus/whimsical-browser",
+    skills: [sk.PYTHON],
+    desc: 'WIP homemade web browser written in Python.'
   },
   {
     name:'PySpeed',
     href:"https://github.com/Ernulphus/speed",
+    skills: [sk.PYTHON],
+    desc: 'Python version of the card game Speed.'
   },
   {
     name:'Campus Management',
     href:"https://github.com/Ernulphus/final-client",
+    skills: [sk.REACT, sk.JS],
+    desc: 'React demo showing off CRUD control of a campus database.'
   },
   {
     name:'Mock Bank Account',
-    href:"https://ernulphus.github.io/bor/"
+    href:"https://ernulphus.github.io/bor/",
+    skills: [sk.REACT, sk.JS],
+    desc: 'React demo showing off preserving state in a single-page app.'
   },
   {
     name:'Laser Chess',
     href:"https://github.com/Ernulphus/winter-2020-codefest-submissions-team-cool",
+    skills: [sk.GODOT],
+    desc: 'Like chess, but with lasers! Based on the ThinkFun board game based on the 1987 program by Mike Duppong. Features five starting board configurations and original music by myself and Sasha Ebersole.'
   },
 ]
 
@@ -76,14 +134,14 @@ const employment = [
     location: 'Remote',
     dates: 'Aug. 2023 - Present',
     title: 'Full stack web developer',
-    skills: ['React.js', 'Flask', 'git', 'bash', 'Javascript'],
+    skills: [sk.REACT, sk.FLASK, sk.GIT, sk.BASH, sk.JS],
   },
   {
     name: 'East Harlem Scholars High School',
     location: 'New York, NY',
     dates: 'Aug. 2022 - Oct. 2023',
     title: 'Computer Science Teacher',
-    skills: ['Python']
+    skills: [sk.PYTHON]
   },
   {
     name: 'NYCDOE Security Incident Response Team',
@@ -116,6 +174,7 @@ const bioText = (
 )
 
 export {
+  pages,
   links,
   projects,
   education,

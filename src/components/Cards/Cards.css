@@ -19,9 +19,30 @@
   margin: 10px 0;
   padding: 0 5px;
   transition: transform 0.5s;
-  color: maroon;
+  color: var(--walnut-brown);
 }
 
 .card:hover {
   transform: translate(7px, 0);
+}
+
+.card .skills {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.card .skills .tag {
+  border: 1px solid black;
+  border-radius: 10%;
+  padding: 2px;
+  margin: 2px;
+}
+
+
+@media (min-width: 1074px) {
+  .cards-wrapper > * {
+    width: 33%;
+  }
 }
