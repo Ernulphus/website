@@ -1,11 +1,11 @@
 const pages = [
   {
     name: 'Home',
-    href: '/website',
+    href: '/',
   },
   {
     name: 'Projects',
-    href: 'website/Projects',
+    href: '/Projects',
   },
   // {
   //   name: 'Education',

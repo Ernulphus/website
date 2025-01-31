@@ -1,6 +1,6 @@
 // Component for webpage sidebar with internal and external links
 import {useState} from 'react';
-import {pages, links, projects, contacts} from "../constants";
+import {pages, links, contacts} from "../constants";
 
 import './Sidebar.css';
 
@@ -23,15 +23,15 @@ function Sidebar() {
           >{link.text}</a>
           <br/></div>
       ));
-    const personalProjects = projects.map((project) => (
-        <div className='sidebar-link-div' key={project.text}><a
-            className="App-link"
-            href={project.href}
-            target="_blank"
-            rel="noopener noreferrer"
-          >{project.name}</a>
-          <br/></div>
-      ));
+    // const personalProjects = projects.map((project) => (
+    //     <div className='sidebar-link-div' key={project.text}><a
+    //         className="App-link"
+    //         href={project.href}
+    //         target="_blank"
+    //         rel="noopener noreferrer"
+    //       >{project.name}</a>
+    //       <br/></div>
+    //   ));
     const personalContacts = contacts.map((contact) => (
         <div key={contact.text}>
             {contact.text} : {contact.value}      
