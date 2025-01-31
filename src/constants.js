@@ -7,10 +7,10 @@ const pages = [
     name: 'Projects',
     href: '/projects',
   },
-  // {
-  //   name: 'Education',
-  //   href: '/Education',
-  // },
+  {
+    name: 'Education',
+    href: '/education',
+  },
   // {
   //   name: 'Work Experience',
   //   href: '/Experience',
@@ -110,6 +110,13 @@ const projects = [
 
 const education = [
   {
+    name:'UC Berkeley School of Information',
+    location: 'Remote',
+    dates: 'May 2024 - April 2026 (expected)',
+    degree: 'Masters of Information and Cyber Security (MICS)',
+    gpa: '4.0',
+  },
+  {
     name:'Macaulay Honors College at Hunter College',
     location: 'New York, NY',
     dates: 'Aug. 2018 - June 2022',
@@ -118,13 +125,6 @@ const education = [
     minors: 'Music and Mathematics',
     honors: ['ΦBK', 'EΣΦ'],
     gpa: '3.885'
-  },
-  {
-    name:'UC Berkeley School of Information',
-    location: 'Remote',
-    dates: 'May 2024 - April 2026 (expected)',
-    degree: 'Masters of Information and Cyber Security (MICS)',
-    gpa: '4.0',
   },
 ]
 

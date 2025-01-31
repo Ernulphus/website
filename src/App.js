@@ -6,6 +6,7 @@ import Sidebar from './components/Sidebar';
 import Home from './components/Home';
 import Projects from './components/Projects/ProjectRoutes';
 import { Neko } from "./neko/app/neko.ts"
+import Education from './components/Education/Education.jsx';
 
 function App() {
   useEffect(() => {
@@ -14,7 +15,7 @@ function App() {
     const neko = new Neko({
       nekoName: "peach",
       nekoImageUrl: "/peach.png",
-      initialPosX: 1000,
+      initialPosX: 500,
       initialPosY: 50,
       startFollowing: true,
      });
@@ -33,6 +34,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/website" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/education" element={<Education />} />
         </Routes>
       </BrowserRouter>
 

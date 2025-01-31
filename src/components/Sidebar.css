@@ -98,3 +98,7 @@
   outline: #0a0908 solid 1px;
   transform: translate(2px);
 }
+
+.sidebar a {
+  color: #22333b;
+}
