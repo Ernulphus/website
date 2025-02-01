@@ -11,10 +11,10 @@ const pages = [
     name: 'Education',
     href: '/education',
   },
-  // {
-  //   name: 'Work Experience',
-  //   href: '/Experience',
-  // },
+  {
+    name: 'Work Experience',
+    href: '/experience',
+  },
 ];
 
 const links = [
@@ -146,7 +146,7 @@ const employment = [
   {
     name: 'NYCDOE Security Incident Response Team',
     location: 'New York, NY',
-    dates: 'June - Aug. 2022',
+    dates: 'June 2022 - Aug. 2022',
     title: 'Incident Response Intern',
     skills: ['Incident response', 'Devo SIEM', 'XSOAR', 'MS Cloud App Security'],
   },

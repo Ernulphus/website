@@ -7,6 +7,7 @@ import Home from './components/Home';
 import Projects from './components/Projects/ProjectRoutes';
 import { Neko } from "./neko/app/neko.ts"
 import Education from './components/Education/Education.jsx';
+import Experience from './components/Employment/Experience.jsx';
 
 function App() {
   useEffect(() => {
@@ -35,6 +36,7 @@ function App() {
           <Route path="/website" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/education" element={<Education />} />
+          <Route path="/experience" element={<Experience />} />
         </Routes>
       </BrowserRouter>
 
