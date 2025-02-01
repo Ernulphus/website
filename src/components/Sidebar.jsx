@@ -17,13 +17,15 @@ function Sidebar() {
       </Link>
     ));
     const personalLinks = links.map((link) => (
-        <div className='sidebar-link-div' key={link.text}><a
-            className="App-link"
-            href={link.href}
+        <Link
+            to={link.href}
             target="_blank"
             rel="noopener noreferrer"
-          >{link.text}</a>
-          <br/></div>
+          >
+            <div className='sidebar-link-div' key={link.text}>
+              {link.text}
+            </div>
+          </Link>
       ));
     // const personalProjects = projects.map((project) => (
     //     <div className='sidebar-link-div' key={project.text}><a
