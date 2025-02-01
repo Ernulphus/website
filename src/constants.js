@@ -1,19 +1,22 @@
+const local = process.env.LOCAL;
+const urlbase = local ? '' : '/website';
+console.log(local);
 const pages = [
   {
     name: 'Home',
-    href: 'website',
+    href: `${urlbase}/`,
   },
   {
     name: 'Projects',
-    href: 'projects',
+    href: `${urlbase}/projects`,
   },
   {
     name: 'Education',
-    href: 'education',
+    href: `${urlbase}/education`,
   },
   {
     name: 'Work Experience',
-    href: 'experience',
+    href: `${urlbase}/experience`,
   },
 ];
 
@@ -231,6 +234,7 @@ export {
   projects,
   education,
   employment,
+  machines,
   contacts,
   bioText,
 }
