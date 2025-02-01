@@ -159,6 +159,29 @@ const employment = [
   }
 ]
 
+const machines = [
+  {
+    name: 'Tethys',
+    desc: 'Lenovo IdeaPad 1 15ALC7. AMD Ryzen 7 5700U with Radeon Graphics × 16. 16GB RAM. Dual booted Windows 11 / Ubuntu. Main laptop for most of my work and personal projects. Named for the Greek titan of rivers.'
+  },
+  {
+    name: 'Gaea',
+    desc: 'My desktop, originally built with my bar mitzvah money and Ship of Theseus\'d many times. AMD Ryzen 5 5600X, RTX3060 VENTUS 3X 12G. 8GB RAM. Dual booted Windows 11 / Ubuntu. Named for the Greek titan of the earth.'
+  },
+  {
+    name: 'Vesta',
+    desc: 'Red Polaroid Go gen 2 camera. Named for the Roman goddess of the hearth.',
+  },
+  {
+    name: 'Latona',
+    desc: 'White Polaroid Now+ camera. Named for the Roman goddess of light.',
+  },
+  {
+    name: 'Fulgora',
+    desc: 'Gray Polaroid Impulse Portrait camera. Named for the Roman goddess of lightning.',
+  },
+]
+
 const contacts = [
         {text:'email', value:'bk1nyc@gmail.com'},
         {text:'C', value:'(917) 868-3732'},
