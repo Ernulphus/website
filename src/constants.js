@@ -1,7 +1,7 @@
 const pages = [
   {
     name: 'Home',
-    href: '/',
+    href: '/website',
   },
   {
     name: 'Projects',
@@ -37,6 +37,8 @@ const sk = {
   GODOT: 'Godot',
   SQL: 'SQL',
   MONGO: 'MongoDB',
+  HTML: 'HTML',
+  CSS: 'CSS',
 };
 
 const projects = [
@@ -134,7 +136,7 @@ const employment = [
     location: 'Remote',
     dates: 'Aug. 2023 - Present',
     title: 'Full stack web developer',
-    skills: [sk.REACT, sk.FLASK, sk.GIT, sk.BASH, sk.JS],
+    skills: [sk.REACT, sk.FLASK, sk.GIT, sk.BASH, sk.JS, sk.HTML, sk.CSS],
   },
   {
     name: 'East Harlem Scholars High School',
@@ -151,11 +153,38 @@ const employment = [
     skills: ['Incident response', 'Devo SIEM', 'XSOAR', 'MS Cloud App Security'],
   },
   {
+    name: 'East Harlem Tutorial Program',
+    location: 'New York, NY',
+    dates: 'Oct. 2021 - June 2022',
+    title: 'Afterschool Web Dev Instructor',
+    skills: [sk.JS, sk.HTML, sk.CSS],
+  },
+  {
     name: 'CUNY Hunter College',
     location: 'New York, NY',
     dates: 'Sept. 2021 - Dec. 2021',
     title: 'Computer Theory TA/Tutor',
     skills: ['Automata theory', 'Turing machines', 'Regular expressions']
+  },
+  {
+    name: 'Art of Problem Solving Initiative',
+    dates: 'Dec. 2020 - Oct. 2021',
+    title: 'Entry Points Instructor',
+  },
+  {
+    name: 'Bridge to Enter Advanced Mathematics',
+    dates: 'Summers, July 2019 - Aug. 2021',
+    title: 'Counselor and TA',
+  },
+  {
+    name: 'Columbia Achievement Initiative',
+    title: 'STEM Tutor',
+    dates: 'Feb. 2020 - June 2020',
+  },
+  {
+    name: 'USA Math Talent Search',
+    title: 'Grader',
+    dates: 'Fall 2019, 2020',
   }
 ]
 
