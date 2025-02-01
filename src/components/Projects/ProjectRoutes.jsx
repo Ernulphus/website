@@ -8,7 +8,7 @@ function Projects () {
     
 
     const routes = projects.map((project) => (
-        <Link to={project.href}>
+        <Link to={project.href} target="_blank" rel="noopener noreferrer">
             <Card>
                 <h2>{project.name}</h2>
                 {project.desc && (<p>{project.desc}</p>)}
