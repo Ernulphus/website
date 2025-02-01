@@ -1,19 +1,19 @@
 const pages = [
   {
     name: 'Home',
-    href: '/website',
+    href: 'website',
   },
   {
     name: 'Projects',
-    href: '/projects',
+    href: 'projects',
   },
   {
     name: 'Education',
-    href: '/education',
+    href: 'education',
   },
   {
     name: 'Work Experience',
-    href: '/experience',
+    href: 'experience',
   },
 ];
 
