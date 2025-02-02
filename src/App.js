@@ -2,12 +2,13 @@ import './App.css';
 import './components/Sidebar';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useEffect } from 'react';
+import { Neko } from "./neko/app/neko.ts"
 import Sidebar from './components/Sidebar';
 import Home from './components/Home';
 import Projects from './components/Projects/ProjectRoutes';
-import { Neko } from "./neko/app/neko.ts"
 import Education from './components/Education/Education.jsx';
 import Experience from './components/Employment/Experience.jsx';
+import Hardware from './components/Hardware/Hardware.jsx';
 
 function App() {
   useEffect(() => {
@@ -37,6 +38,7 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/education" element={<Education />} />
           <Route path="/experience" element={<Experience />} />
+          <Route path="/hardware" element={<Hardware />} />
         </Routes>
       </BrowserRouter>
 

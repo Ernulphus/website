@@ -1,2 +1,2 @@
-export LOCAL=1
+export LOCAL='Local'
 npm run start

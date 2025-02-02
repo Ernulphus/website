@@ -1,5 +1,6 @@
 const local = process.env.LOCAL;
-const urlbase = local ? '' : '/website';
+// const urlbase = local ? '' : '/website';
+const urlbase = ''
 console.log(local);
 const pages = [
   {
@@ -17,6 +18,10 @@ const pages = [
   {
     name: 'Work Experience',
     href: `${urlbase}/experience`,
+  },
+  {
+    name: 'Hardware',
+    href: `${urlbase}/hardware`,
   },
 ];
 
@@ -210,7 +215,7 @@ const machines = [
   },
   {
     name: 'Fulgora',
-    desc: 'Gray Polaroid Impulse Portrait camera. Named for the Roman goddess of lightning.',
+    desc: 'Gray Polaroid Impulse camera. Named for the Roman goddess of lightning.',
   },
 ]
 
