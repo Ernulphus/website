@@ -11,7 +11,7 @@ function Hardware () {
             <Card>
                 <h2>{machine.name}</h2>
                 {machine.desc && (<p>{machine.desc}</p>)}
-                {machine.img && (<img src={machine.img} />)}
+                {machine.img && (<img src={machine.img} alt={machine.name}/>)}
 
             </Card>
         </Link>
