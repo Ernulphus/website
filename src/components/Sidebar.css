@@ -1,7 +1,7 @@
 .sidebar {
   display: flex;
   flex-direction: column;
-  background-color: #eae0d5;
+  background-color: var(--almond);
   padding: 0.5rem;
 }
 
@@ -98,11 +98,11 @@
 }
 
 .sidebarSection .sidebar-link-div:hover {
-  color: #0a0908;
-  outline: #0a0908 solid 1px;
+  color: var(--black);
+  outline: var(--black) solid 1px;
   transform: translate(2px);
 }
 
 .sidebar a {
-  color: #22333b;
+  color: var(--gunmetal);
 }
