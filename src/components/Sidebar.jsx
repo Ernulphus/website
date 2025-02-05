@@ -3,6 +3,9 @@ import {useState} from 'react';
 import {pages, links, contacts} from "../constants";
 import { Link } from 'react-router-dom';
 
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import MenuIcon from '@mui/icons-material/Menu';
+
 import './Sidebar.css';
 
 function Sidebar() {
@@ -59,12 +62,12 @@ function Sidebar() {
                     className='sidebarButton'
                     type="button" 
                     onClick={closeSidebar}>
-                      Hide NavBar
+                      <ArrowBackIcon />
                   </button>
                 : <button className="sidebarButton" 
                   type="button" 
                   onClick={openSidebar}>
-                    Show NavBar
+                    <MenuIcon />
                 </button>
               )}
               <div className='sidebarSection'>

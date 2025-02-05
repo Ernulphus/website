@@ -158,7 +158,7 @@ const employment = [
     location: 'New York, NY',
     dates: 'June 2022 - Aug. 2022',
     title: 'Incident Response Intern',
-    skills: ['Incident response', 'Devo SIEM', 'XSOAR', 'MS Cloud App Security'],
+    skills: ['Incident response', 'Devo SIEM', 'XSOAR', 'MS Defender'],
   },
   {
     name: 'East Harlem Tutorial Program',

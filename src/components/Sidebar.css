@@ -73,8 +73,11 @@
   position: fixed;
   left: 0;
   top: 0;
-  background-color: #c6ac8f;
-  transition: transform 0.2s;
+  background-color: var(--almond);
+  transition: transform 0.4s;
+  transition-timing-function: var(--overshoot);
+  border: none;
+  color: var(--walnut-brown)
 }
 
 .sidebarButton:hover {
@@ -88,7 +91,7 @@
 .sidebarSection .sidebar-link-div {
   transition: color 0.2s;
   transition: outline-color 0.2s;
-  outline: #eae0d5 solid 0px;
+  outline: var(--almond) solid 0px;
   transition: transform 0.2s;
   transition-timing-function: var(--overshoot);
   padding: 0.25rem 0;
