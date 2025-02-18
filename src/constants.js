@@ -53,8 +53,14 @@ const projects = [
   {
     name: 'DataMixMaster',
     href: "https://www.datamixmaster.com/",
-    skills: [sk.JS, sk.REACT, sk.PYTHON, sk.FLASK, sk.GIT, sk.BASH, sk.SQL, sk.MONGO],
+    skills: [sk.JS, sk.REACT, sk.HTML, sk.CSS, sk.PYTHON, sk.FLASK, sk.GIT, sk.BASH, sk.SQL, sk.MONGO],
     desc: 'Data congregation and analysis tool. Full stack work.'
+  },
+  {
+    name: 'Library of Trans Alexander website',
+    href: "https://ernulphus.github.io/lota/",
+    skills: [sk.JS, sk.REACT, sk.GIT, sk.BASH, sk.HTML, sk.CSS],
+    desc: "Website for Avry Denholtz's Library of Transmasculine Alexander project",
   },
   {
     name: 'SFA Knowledge Hub',
