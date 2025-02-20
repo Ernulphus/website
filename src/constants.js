@@ -1,3 +1,5 @@
+import resume from './components/FileDownloader/pdfs/KaufmanResume.pdf';
+
 const local = process.env.LOCAL;
 // const urlbase = local ? '' : '/website';
 const urlbase = ''
@@ -26,12 +28,16 @@ const pages = [
 ];
 
 const links = [
-        {text:'GitHub', href:"https://github.com/Ernulphus"},
-        {text:'LinkedIn', href:"https://www.linkedin.com/in/boaz-kaufman-4281b0174/"},
-        {text:'Substack', href:"https://boazkaufman.substack.com/?utm_source=substack&utm_medium=web&utm_campaign=substack_profile"},
-        {text:'Undergraduate Thesis', href:"https://eportfolios.macaulay.cuny.edu/kaufmanspringboard/"},      
+  {text:'GitHub', href:"https://github.com/Ernulphus"},
+  {text:'LinkedIn', href:"https://www.linkedin.com/in/boaz-kaufman-4281b0174/"},
+  {text:'Substack', href:"https://boazkaufman.substack.com/?utm_source=substack&utm_medium=web&utm_campaign=substack_profile"},
+  {text:'Undergraduate Thesis', href:"https://eportfolios.macaulay.cuny.edu/kaufmanspringboard/"},      
 ];
-      
+
+const pdfs = [
+  {text: 'Resume', href: resume, filename: 'KaufmanResume.pdf'},
+];
+
 const sk = {
   JS: 'JavaScript',
   REACT: 'React',
@@ -240,12 +246,13 @@ const bioText = (
 )
 
 export {
-  pages,
-  links,
-  projects,
+  bioText,
+  contacts,
   education,
   employment,
+  links,
   machines,
-  contacts,
-  bioText,
+  pages,
+  pdfs,
+  projects,
 }

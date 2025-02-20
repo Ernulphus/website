@@ -1,12 +1,13 @@
 // Component for webpage sidebar with internal and external links
 import {useState} from 'react';
-import {pages, links, contacts} from "../constants";
+import {pages, links, contacts, pdfs} from "../constants";
 import { Link } from 'react-router-dom';
 
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import MenuIcon from '@mui/icons-material/Menu';
 
 import './Sidebar.css';
+import FileDownloader from './FileDownloader/FileDownloader';
 
 function Sidebar() {
     const [open, setOpen] = useState(true);
@@ -30,20 +31,15 @@ function Sidebar() {
             </div>
           </Link>
       ));
-    // const personalProjects = projects.map((project) => (
-    //     <div className='sidebar-link-div' key={project.text}><a
-    //         className="App-link"
-    //         href={project.href}
-    //         target="_blank"
-    //         rel="noopener noreferrer"
-    //       >{project.name}</a>
-    //       <br/></div>
-    //   ));
     const personalContacts = contacts.map((contact) => (
         <div key={contact.text}>
             {contact.text} : {contact.value}      
         </div>
       ));
+    
+    const downloads = pdfs.map((pdf) => (
+      <FileDownloader className="sidebar-link-div" text={pdf.text} url={pdf.href} filename={pdf.filename} />
+    ));
 
     const openSidebar = () => {
       setOpen(true);
@@ -56,36 +52,36 @@ function Sidebar() {
       <div className={`sidebar-wrapper ${open ? "is-open" : ""}`} >
         <div className="sidebar-inner">
           <div className="sidebar">
-              {(
-                open
-                ? <button
-                    className='sidebarButton'
-                    type="button" 
-                    onClick={closeSidebar}>
-                      <ArrowBackIcon />
-                  </button>
-                : <button className="sidebarButton" 
+            {(
+              open
+              ? <button
+                  className='sidebarButton'
                   type="button" 
-                  onClick={openSidebar}>
-                    <MenuIcon />
+                  onClick={closeSidebar}>
+                    <ArrowBackIcon />
                 </button>
-              )}
-              <div className='sidebarSection'>
-                  <b>Navigation</b>
-                  {navPages}
-              </div>
-              <div className="sidebarSection">
-                  <b>Links</b>
-                  {personalLinks}
-              </div>
-              {/* <div className="sidebarSection">
-                  <b>Project Repos</b>
-                  {personalProjects}
-              </div> */}
-              <div className="sidebarSection">
-                  <b>Contact</b>
-                  {personalContacts}
-              </div>
+              : <button className="sidebarButton" 
+                type="button" 
+                onClick={openSidebar}>
+                  <MenuIcon />
+                </button>
+            )}
+            <div className='sidebarSection'>
+              <b>Navigation</b>
+              {navPages}
+            </div>
+            <div className="sidebarSection">
+              <b>Links</b>
+              {personalLinks}
+            </div>
+            <div className="sidebarSection">
+              <b>Downloads</b>
+              {downloads}
+            </div>
+            <div className="sidebarSection">
+              <b>Contact</b>
+              {personalContacts}
+            </div>
           </div>
           </div>
       </div>
