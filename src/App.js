@@ -30,7 +30,7 @@ function App() {
 
   return (
     <div className="App">
-      <BrowserRouter>
+      <BrowserRouter basename="/website" >
         <Sidebar />
         <Routes>
           <Route path="/" element={<Home />} />
