@@ -8,7 +8,7 @@
     flex-direction: row;
   }
 
-  .home-selfie {
+  .home-photo {
     width: 33vw;
   }
 
@@ -27,7 +27,7 @@
   }
 }
 
-.home-selfie {
+.home-photo {
   aspect-ratio: 0.75;
   object-fit: cover;
 }

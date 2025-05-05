@@ -1,6 +1,5 @@
-import selfie from './../edge.jpg';
 import './Home.css';
-import { bioText } from './../constants';
+import { bioText, coverPhoto } from './../constants';
 
 function Home () {
 
@@ -8,7 +7,7 @@ function Home () {
 
   return (    
     <div className='home'>
-      <img className="home-selfie" src={selfie} alt={selfieAlt}/>      
+      <img className="home-photo" src={coverPhoto} alt={selfieAlt}/>      
 
       <div className="bio">
           {bioText}

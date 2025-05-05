@@ -1,5 +1,7 @@
 import resume from './components/FileDownloader/pdfs/KaufmanResume.pdf';
 
+import coverPhoto from './photos/immersionheadshot.jpg';
+
 const local = process.env.LOCAL;
 // const urlbase = local ? '' : '/website';
 const urlbase = ''
@@ -238,9 +240,9 @@ const contacts = [
 
 const bioText = (
   <>
-    <h2>Boaz Kaufman</h2>
-    <p>
-    is a Python, C++, and JavaScript programmer based in New York City. They graduated magna cum laude from CUNY Macaulay Honors College at Hunter College in 2022 majoring in Computer Science and Classical Studies and minoring in Music and Mathematics. After college, they interned at the Department of Education's Security Incident Response Team, where they investigated and remediated compromised user accounts on a network of several million hosts. They taught computer science at East Harlem Scholars Academy High School for the 2022-2023 school year and currently work as a software engineer for DataMixMaster. Boaz is also enrolled in UC Berkeley's remote Masters in Information and Cyber Security program, class of Spring 2026. When they aren't programming, they read science fiction, yo-yo, and take pictures with one of their instant cameras.
+    <h3>
+    Boaz Kaufman is an engineer based in New York City who helps individuals and businesses create beautiful and functional websites and software. </h3>
+    <p>They graduated magna cum laude from CUNY Macaulay Honors College at Hunter College in 2022 majoring in Computer Science and Classical Studies and minoring in Music and Mathematics. After college, they interned at the Department of Education's Security Incident Response Team, where they investigated and remediated compromised user accounts on a network of several million hosts. They taught computer science at East Harlem Scholars Academy High School for the 2022-2023 school year and currently work as a software engineer for DataMixMaster. Boaz is also enrolled in UC Berkeley's remote Masters in Information and Cyber Security program, class of Spring 2026. When they aren't programming, they read science fiction, yo-yo, and take pictures with one of their instant cameras.
     </p>
   </>
 )
@@ -248,6 +250,7 @@ const bioText = (
 export {
   bioText,
   contacts,
+  coverPhoto,
   education,
   employment,
   links,
