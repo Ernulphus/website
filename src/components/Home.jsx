@@ -1,5 +1,6 @@
 import './Home.css';
 import { bioText, coverPhoto } from './../constants';
+import ContactForm from './ContactForm/ContactForm';
 
 function Home () {
 
@@ -10,9 +11,9 @@ function Home () {
       <img className="home-photo" src={coverPhoto} alt={selfieAlt}/>      
 
       <div className="bio">
-          {bioText}
+        {bioText}
+        <ContactForm />
       </div>
-      
     </div>
   )
 }

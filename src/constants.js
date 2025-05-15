@@ -231,6 +231,10 @@ const machines = [
     name: 'Fulgora',
     desc: 'Gray Polaroid Impulse camera. Named for the Roman goddess of lightning.',
   },
+  {
+    name: 'Fiona',
+    desc: 'Canon Rebel Xt',
+  },
 ]
 
 const contacts = [
