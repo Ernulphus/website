@@ -65,8 +65,8 @@ const projects = [
     desc: 'Data congregation and analysis tool. Full stack work.'
   },
   {
-    name: 'Library of Trans Alexander website',
-    href: "https://ernulphus.github.io/lota/",
+    name: 'Library of Trans Alexander Site',
+    href: "https://libraryoftransalexander.org",
     skills: [sk.JS, sk.REACT, sk.GIT, sk.BASH, sk.HTML, sk.CSS],
     desc: "Website for Avry Denholtz's Library of Transmasculine Alexander project",
   },
@@ -245,8 +245,18 @@ const contacts = [
 const bioText = (
   <>
     <h3>
-    Boaz Kaufman is an engineer based in New York City who helps individuals and businesses create beautiful and functional websites and software. </h3>
-    <p>They graduated magna cum laude from CUNY Macaulay Honors College at Hunter College in 2022 majoring in Computer Science and Classical Studies and minoring in Music and Mathematics. After college, they interned at the Department of Education's Security Incident Response Team, where they investigated and remediated compromised user accounts on a network of several million hosts. They taught computer science at East Harlem Scholars Academy High School for the 2022-2023 school year and currently work as a software engineer for DataMixMaster. Boaz is also enrolled in UC Berkeley's remote Masters in Information and Cyber Security program, class of Spring 2026. When they aren't programming, they read science fiction, yo-yo, and take pictures with one of their instant cameras.
+    Boaz Kaufman is an engineer based in New York City who helps individuals and businesses create beautiful, functional, and safe websites and software. </h3>
+    <p>Boaz graduated magna cum laude from CUNY Macaulay Honors College at Hunter College in 2022 majoring in Computer Science and Classical Studies and minoring in Music and Mathematics. After college, they interned at the Department of Education's Security Incident Response Team, where they investigated and remediated compromised user accounts on a network of several million hosts. They taught computer science at East Harlem Scholars Academy High School for the 2022-2023 school year and currently work as a software engineer for DataMixMaster. Boaz is also enrolled in UC Berkeley's remote Masters in Information and Cyber Security program, class of Spring 2026.
+    </p>
+    <ul>
+      <li>Elevating private companies with full-stack engineering expertise.</li>
+      <li>Security and privacy hardening and compliance for businesses and individuals.</li>
+      <li>Personal or enterprise website design and creation. Cheaper over time than services like Wix and Google Sites, with an expert touch!</li>
+    </ul>
+    <p>
+      Get in touch to discuss what you or your business needs. After a free initial consultation to determine project requirements, development will start immediately and you'll receive updates every step of the way.</p>
+    <p>
+      Compensation is based on project scope and ability to pay. Static personal sites start at $200, including one year of registration for a custom domain name.
     </p>
   </>
 )
