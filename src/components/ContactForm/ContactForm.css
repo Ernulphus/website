@@ -1,0 +1,14 @@
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input {
+  padding: 5px;
+  margin: 5px 0;
+}
+
+.contact-form textarea {
+  min-height: 4lh;
+  padding: 5px;
+}
