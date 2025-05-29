@@ -16,6 +16,16 @@
   box-sizing: border-box;
 }
 
+.App-link {
+  color: var(--gunmetal);
+}
+
+.bio {
+  text-align: justify;
+  font-size: larger;
+  margin:2rem;
+}
+
 @media (min-width: 1075px) {
   .App { 
     flex-direction: row;
@@ -26,14 +36,9 @@
   .App {
     flex-direction: column-reverse;
   }
+
+  .bio {
+    text-align: left;
+  }
 }
 
-.App-link {
-  color: var(--gunmetal);
-}
-
-.bio {
-  text-align: justify;
-  font-size: larger;
-  margin:2rem;
-}
