@@ -250,14 +250,12 @@ const bioText = (
     </p>
     <ul>
       <li>Elevating private companies with full-stack engineering expertise.</li>
-      <li>Security and privacy hardening and compliance for businesses and individuals.</li>
-      <li>Personal or enterprise website design and creation. Cheaper over time than services like Wix and Google Sites, with an expert touch!</li>
+      <li>Security and privacy hardening for businesses and individuals.</li>
+      <li>Personal or enterprise website design and creation.</li>
     </ul>
-    <p>
-      Get in touch to discuss what you or your business needs. After a free initial consultation to determine project requirements, development will start immediately and you'll receive updates every step of the way.</p>
-    <p>
-      Compensation is based on project scope and ability to pay. Static personal sites start at $200, including one year of registration for a custom domain name.
-    </p>
+    <h3>
+      Get in touch now for a free initial consultation!
+    </h3>
   </>
 )
 
