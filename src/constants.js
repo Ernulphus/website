@@ -253,9 +253,6 @@ const bioText = (
       <li>Security and privacy hardening for businesses and individuals.</li>
       <li>Personal or enterprise website design and creation.</li>
     </ul>
-    <h3>
-      Get in touch now for a free initial consultation!
-    </h3>
   </>
 )
 

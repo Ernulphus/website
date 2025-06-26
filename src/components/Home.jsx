@@ -1,6 +1,18 @@
 import './Home.css';
+import { Link } from 'react-router-dom';
 import { bioText, coverPhoto } from './../constants';
 import ContactForm from './ContactForm/ContactForm';
+
+function CalendarLink() {
+  const calendlyURL = "https://calendly.com/bk1nyc/initial-consultation";
+  return (
+    <div className="calendar-link" >
+      <Link to={calendlyURL} target="_blank" rel="noopener noreferrer">
+        <h2>Schedule a chat to discuss your needs!</h2>
+      </Link>
+    </div>
+  )
+}
 
 function Home () {
 
@@ -12,6 +24,7 @@ function Home () {
 
       <div className="bio">
         {bioText}
+        <CalendarLink></CalendarLink>
         <ContactForm />
       </div>
     </div>

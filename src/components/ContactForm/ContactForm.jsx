@@ -18,6 +18,9 @@ function ContactForm() {
   
   return (
     <form className="contact-form" onSubmit={sendEmail}>
+      <h3>
+        Or send me a message:
+      </h3>
       <input type="hidden" name="contact_number" />
       <label>Name</label>
       <input type="text" name="from_name" />
@@ -28,8 +31,7 @@ function ContactForm() {
       <label>Message</label>
       <textarea name="html_message">
         Hi Boaz!
-        I'd like to schedule a call for...
-        I'm available...
+        I need help with this problem...
       </textarea> 
       <input type="submit" value="Send" />
       { sent && (<p>Message sent!</p>)}

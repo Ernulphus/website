@@ -35,3 +35,23 @@
 #peach {
   background-image: url('/public/marmalade.png') !important;
 }
+
+.calendar-link {
+  text-align: center;
+  transition: color 0.2s;
+  transition: outline-color 0.2s;
+  outline: var(--almond) solid 0px;
+  transition: transform 0.2s;
+  transition-timing-function: var(--overshoot);
+  padding: 0.25rem 0;
+}
+
+.calendar-link:hover {
+  color: var(--black);
+  outline: var(--black) solid 1px;
+  transform: translate(0, -2px);
+}
+
+.calendar-link a {
+  color: var(--gunmetal);
+}
