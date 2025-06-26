@@ -44,11 +44,12 @@
   transition: transform 0.2s;
   transition-timing-function: var(--overshoot);
   padding: 0.25rem 0;
+  outline: var(--black) dashed 1px;
 }
 
 .calendar-link:hover {
+  outline: var(--black) solid 2px;
   color: var(--black);
-  outline: var(--black) solid 1px;
   transform: translate(0, -2px);
 }
 
