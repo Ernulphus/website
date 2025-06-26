@@ -8,7 +8,7 @@ function Education () {
     
 
     const routes = education.map((school) => (
-        <Link to={school.href}>
+        <Link to={school.href} target="_blank" rel="noopener noreferrer">
             <Card>
                 <h2>{school.name}</h2>
                 {school.degree && (<p>{school.degree}</p>)}

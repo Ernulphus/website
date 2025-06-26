@@ -7,7 +7,7 @@ import './Hardware.css';
 function Hardware () {
     
     const routes = machines.map((machine) => (
-        <Link to={machine.href}>
+        <Link to={machine.href} target="_blank" rel="noopener noreferrer">
             <Card>
                 <h2>{machine.name}</h2>
                 {machine.desc && (<p>{machine.desc}</p>)}

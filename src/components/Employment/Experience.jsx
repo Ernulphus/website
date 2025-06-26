@@ -7,7 +7,7 @@ import './Experience.css';
 function Experience () {
     
     const routes = employment.map((job) => (
-        <Link to={job.href}>
+        <Link to={job.href} target="_blank" rel="noopener noreferrer">
             <Card>
                 <h2>{job.name}</h2>
                 {job.title && (<h3>{job.title}</h3>)}
