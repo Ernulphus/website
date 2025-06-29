@@ -245,12 +245,12 @@ const contacts = [
 const bioText = (
   <>
     <h3>
-    Boaz Kaufman is an engineer based in New York City who helps individuals and businesses create beautiful, functional, and safe websites and software. </h3>
-    <p>Boaz graduated magna cum laude from CUNY Macaulay Honors College at Hunter College in 2022 majoring in Computer Science and currently studies cybersecurity at UC Berkeley. They are a lead software engineer at DataMixMaster, LLC. Boaz offers a variety of services:
+    Boaz Kaufman is an engineer who helps individuals and businesses create beautiful and functional websites. They also act as a security consultant helping people like you, and small businesses like yours, to operate safely and privately.</h3>
+    <p>Boaz is a lead software engineer at DataMixMaster, LLC and studies cybersecurity at UC Berkeley. They graduated magna cum laude from CUNY Macaulay Honors College at Hunter College in 2022 majoring in Computer Science. Boaz offers a variety of services:
     </p>
     <ul>
       <li>Elevating private companies with full-stack engineering expertise.</li>
-      <li>Security and privacy hardening for businesses and individuals.</li>
+      <li>Security and privacy solutions for businesses and individuals.</li>
       <li>Personal or enterprise website design and creation.</li>
     </ul>
   </>
