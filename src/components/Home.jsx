@@ -1,7 +1,6 @@
 import './Home.css';
 import { Link } from 'react-router-dom';
 import { bioText, calendlyURL, coverPhoto } from './../constants';
-import ContactForm from './ContactForm/ContactForm';
 
 function CalendarLink() {
   return (
