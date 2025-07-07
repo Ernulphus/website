@@ -237,9 +237,12 @@ const machines = [
   },
 ]
 
+const calendlyURL = "https://calendly.com/bk1nyc/initial-consultation";
+
 const contacts = [
         {text:'email', value:'bk1nyc@gmail.com'},
-        {text:'C', value:'(917) 868-3732'},
+        {text:'Cell', value:'(917) 868-3732'},
+        {text:'Calendly', href:calendlyURL},
 ]
 
 const bioText = (
@@ -258,6 +261,7 @@ const bioText = (
 
 export {
   bioText,
+  calendlyURL,
   contacts,
   coverPhoto,
   education,

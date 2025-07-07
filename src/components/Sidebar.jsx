@@ -31,11 +31,24 @@ function Sidebar() {
             </div>
           </Link>
       ));
-    const personalContacts = contacts.map((contact) => (
-        <div key={contact.text}>
-            {contact.text} : {contact.value}      
-        </div>
-      ));
+    const personalContacts = contacts.map((contact) =>
+        contact.href 
+          ? (
+              <Link
+                to={contact.href} 
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {contact.text}
+              </Link>
+          )
+          : (
+            <div key={contact.text}>
+                {contact.text} : {contact.value}      
+            </div>
+          )
+            
+      );
     
     const downloads = pdfs.map((pdf) => (
       <FileDownloader className="sidebar-link-div" text={pdf.text} url={pdf.href} filename={pdf.filename} />
