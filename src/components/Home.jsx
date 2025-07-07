@@ -25,7 +25,7 @@ function Home () {
       <div className="bio">
         {bioText}
         <CalendarLink></CalendarLink>
-        <ContactForm />
+        {/* <ContactForm /> */}
       </div>
     </div>
   )
