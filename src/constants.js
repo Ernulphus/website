@@ -238,11 +238,13 @@ const machines = [
 ]
 
 const calendlyURL = "https://calendly.com/bk1nyc/initial-consultation";
+const signalLink = "https://signal.me/#eu/MdUDeCW0vMzFGcIvmLr2HmUS50SU-clTXUnl4OpJMZVhS1aYmFBEdZwE14vm23gi";
 
 const contacts = [
         {text:'email', value:'bk1nyc@gmail.com'},
         {text:'Cell', value:'(917) 868-3732'},
         {text:'Calendly', href:calendlyURL},
+        {text:'Signal', value:'bfk.63', href:signalLink},
 ]
 
 const bioText = (
@@ -271,4 +273,5 @@ export {
   pages,
   pdfs,
   projects,
+  signalLink
 }

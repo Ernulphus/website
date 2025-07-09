@@ -39,7 +39,9 @@ function Sidebar() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                {contact.text}
+                <div>
+                  {contact.text}{contact.value && `: ${contact.value}`}
+                </div>
               </Link>
           )
           : (
