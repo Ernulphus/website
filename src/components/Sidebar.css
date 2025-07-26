@@ -3,6 +3,7 @@
   flex-direction: column;
   background-color: var(--almond);
   padding: 0.5rem;
+  align-self: center;
 }
 
 @keyframes openSidebar {
@@ -32,30 +33,15 @@
     text-align: left;
     overflow: clip;
   }
-
-  .sidebar-open {
-    animation: openSidebar 0.5s ease-out forwards;
-  }
-  
-  .sidebar-closed {
-    animation: closeSidebar 0.5s ease-out forwards;
-    padding: 0;
-  }
-
-  .sidebar-wrapper {
-    display: grid;
-    grid-template-columns: 0rem;
-    transition: grid-template-columns 0.5s ease-out;
-  }
   
   .sidebar-inner {
     overflow: clip;
     white-space: nowrap;
   }
-  
-  .sidebar-wrapper.is-open {
-    grid-template-columns: 15rem;
-  }
+
+  .sidebarSection:first-child {
+  margin-top: 0;
+}
 }
 
 @media (max-width: 1074px) {

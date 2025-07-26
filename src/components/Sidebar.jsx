@@ -52,27 +52,23 @@ function Sidebar() {
     ));
 
     return (
-      <div className="sidebar-wrapper is-open" >
-        <div className="sidebar-inner">
-          <div className="sidebar">
-            <div className='sidebarSection'>
-              <b>Navigation</b>
-              {navPages}
-            </div>
-            <div className="sidebarSection">
-              <b>Links</b>
-              {personalLinks}
-            </div>
-            <div className="sidebarSection">
-              <b>Downloads</b>
-              {downloads}
-            </div>
-            <div className="sidebarSection">
-              <b>Contact</b>
-              {personalContacts}
-            </div>
-          </div>
-          </div>
+      <div className="sidebar">
+        <div className='sidebarSection'>
+          <b>Navigation</b>
+          {navPages}
+        </div>
+        <div className="sidebarSection">
+          <b>Links</b>
+          {personalLinks}
+        </div>
+        <div className="sidebarSection">
+          <b>Downloads</b>
+          {downloads}
+        </div>
+        <div className="sidebarSection">
+          <b>Contact</b>
+          {personalContacts}
+        </div>
       </div>
     );
 }

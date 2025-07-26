@@ -3,17 +3,22 @@
   justify-content: center;
 }
 
+
 @media (min-width: 1075px) {
   .home { 
     flex-direction: row;
   }
-
+  
   .home-photo {
     width: 33vw;
   }
-
+  
   .bio {
     align-content: center;
+    margin-top: 0
+  }
+  .bio > *:first-child {
+    margin-top: 0;
   }
 }
 
