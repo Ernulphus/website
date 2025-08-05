@@ -30,7 +30,7 @@
 }
 
 .card:hover {
-  transform: translate(7px, 0);
+  transform: translate(10px, 0) scale(1.05);
 }
 
 .card .skills {
