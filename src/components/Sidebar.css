@@ -32,6 +32,9 @@
   .sidebar {
     text-align: left;
     overflow: clip;
+    align-self: flex-start;
+    position: sticky;
+    top: 0px;
   }
   
   .sidebar-inner {
