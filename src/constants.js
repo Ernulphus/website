@@ -233,7 +233,15 @@ const machines = [
   },
   {
     name: 'Fiona',
-    desc: 'Canon Rebel Xt',
+    desc: 'Canon Digital Rebel Xt DSLR camera.',
+  },
+  {
+    name: 'Chaac',
+    desc: 'Canon Rebel X SLR camera',
+  },
+  {
+    name: 'Pollux',
+    desc: 'Ektar H35 Half Frame film camera',
   },
 ]
 
