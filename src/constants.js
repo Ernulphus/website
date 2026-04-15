@@ -55,14 +55,28 @@ const sk = {
   MONGO: 'MongoDB',
   HTML: 'HTML',
   CSS: 'CSS',
+  AI: 'AI',
+  RESEARCH: 'Research',
 };
 
 const projects = [
   {
+    name: 'AgentWatch',
+    href: '',
+    skills: [sk.RESEARCH, sk.AI, sk.JS, sk.REACT],
+    desc: 'Evaluation framework and manual testing suite for browser-based AI agents.'
+  },
+  {
+    name: 'Bolipets',
+    href: 'bolipets.vercel.app',
+    skills: [sk.JS, sk.REACT, sk.HTML, sk.CSS, sk.PYTHON, sk.FLASK, sk.GIT, sk.BASH, sk.MONGO],
+    desc: 'Pet simulation game.'
+  },
+  {
     name: 'DataMixMaster',
     href: "https://www.datamixmaster.com/",
     skills: [sk.JS, sk.REACT, sk.HTML, sk.CSS, sk.PYTHON, sk.FLASK, sk.GIT, sk.BASH, sk.SQL, sk.MONGO],
-    desc: 'Data congregation and analysis tool. Full stack work.'
+    desc: 'Data aggregation and analysis tool. Full stack work.'
   },
   {
     name: 'Library of Trans Alexander Site',
