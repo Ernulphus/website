@@ -11,8 +11,6 @@
   
   .home-photo {
     width: 33vw;
-    transform: scale(0.75);
-    border-radius: 10px;
   }
   
   .bio {
@@ -37,6 +35,8 @@
 .home-photo {
   aspect-ratio: 0.75;
   object-fit: cover;
+  transform: scale(0.75);
+  border-radius: 10px;
 }
 
 #peach {
